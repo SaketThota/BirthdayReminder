@@ -1,0 +1,97 @@
+.body{
+    background-image: linear-gradient(to right,#c31432,#240b36);
+    color:white;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#name{
+    border: none;
+    border-radius: 3px;
+    padding: 15px;
+    margin: auto;
+}
+#birthdate{
+    border: none;
+    border-radius: 3px;
+    padding: 13px;
+}
+.container{
+    background-color:grey;
+    margin:5% 15%;    
+    box-shadow: 3px 3px 5px #092c5a;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn-list{
+    padding: 25px;   
+}
+.btn{
+    text-decoration: none;
+    background-color:  coral;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+    padding: 10px;    
+}
+.btn:hover{
+    background-color: rgb(255, 106, 52);
+}
+.header{
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(10, 32, 78);
+    font-size: 2em;
+    padding: 2%;
+}
+
+
+th {
+    padding: 15px;
+    text-align: center;
+    
+  }
+
+.list{
+    font-size: 1.5em;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+}
+
+.list-items{
+    padding: auto;
+    text-align: center;
+}
+
+.list-items-date,.list-items-name{
+    padding: 20px;
+}
+
+.list-items:hover{
+    border-bottom:1px #092c5a solid;
+    border-radius: 2px;
+    
+}
+
+.container > .list{
+    justify-items: center;
+}
+
+form{
+    margin-top: 2%;
+    
+    display: grid;
+    grid-template-columns: 10px 220px;
+    grid-template-rows: 1;
+    justify-content: space-evenly;
+    
+}
+ /* 
+sr no.    Names   Dates&Times
+left aln  center    center */
