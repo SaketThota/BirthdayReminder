@@ -82,10 +82,14 @@ function showTable(){
         } else { 
             days += Math.abs(months[currMonth] - currDate);
             currMonth++;
-            while (currMonth < birthdayMonth) { 
-                days += Math.abs(months[currMonth]);
+            let cntMonths = 0;
+            console.log(birthdayMonth);
+            console.log(currMonth);
+            while (cntMonths < Math.abs(currMonth - birthdayMonth)) { 
+                days += months[currMonth];
+                ++cntMonths;
             }
-            days += Math.abs(birthdayDate);
+            days += birthdayDate;
         }
 
         sr.textContent = cnt++;
