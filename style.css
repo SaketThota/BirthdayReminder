@@ -60,7 +60,8 @@ th {
     font-size: 1.5em;
     text-align: center;
     border-collapse: collapse;
-    width: 100%;
+    width: 92%;
+    margin-left: 3%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
 }
 
@@ -68,13 +69,16 @@ th {
     padding: auto;
     text-align: center;
 }
+.active{
+    background-color: rgb(151, 151, 151);
+}
 
 .list-items-date,.list-items-name{
     padding: 20px;
 }
 
 .list-items:hover{
-    border-bottom:1px #092c5a solid;
+    border-bottom:1px white solid;
     border-radius: 2px;
     
 }
@@ -85,7 +89,6 @@ th {
 
 form{
     margin-top: 2%;
-    
     display: grid;
     grid-template-columns: 10px 220px;
     grid-template-rows: 1;

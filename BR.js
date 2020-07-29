@@ -90,10 +90,20 @@ function display(){
         if (newname.textContent && newdate.textContent)
         List.appendChild(newbirthday);
         List_items = document.querySelectorAll(".list-items");
-        List_items.forEach(function(ele){
+        List_items.forEach(function(ele){        
             ele.addEventListener('click',function(){
                     selected = ele.childNodes[0].textContent;
+                    List_items.forEach(function(ele1){
+                        if(ele1.childNodes[0].textContent == selected){
+                            ele.classList.add("active");
+                        }
+                        else{
+                            ele1.classList.remove("active");
+                        }
+                    })
+                    
             });
+            
         })
     })
 }
