@@ -62,7 +62,6 @@ function display(){
         newname.className="list-items-name";
         
         let completeDate = ele.date;
-        // 2020-07-02
         let birthdayMonth = parseInt(completeDate.substring(5, 7)),
             birthdayDate = parseInt(completeDate.substring(8, 10));
             birthdayMonth--;
@@ -107,6 +106,8 @@ function display(){
         })
     })
 }
+/*
+ */ 
 
 Remove.addEventListener("click",function(){
     if(selected!=NaN)List.removeChild(List.childNodes[selected]);
@@ -136,5 +137,4 @@ function showTable(){
     sortTable();
     removeAllChildNodes(List);   
     display();
-    
 }
